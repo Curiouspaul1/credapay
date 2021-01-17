@@ -54,19 +54,36 @@ html.sr .section-content {
 	z-index: 30;
 }
 
-.menu-open .nav-links {
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	padding-top: 20vh;
-	align-items: center;
-	background-color: var(--creda-purple);
-	width: 60vw;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 20;
+.menu-open .nav-links{
+	z-index:50;
+	transition-property: transform;
+	transition:0.8s ease-out;
+	transform: translateX(1px);
+}
+
+@media (max-width:768px)
+{
+	.menu-limbo {
+		transform: translateX(-800px);
+		transition-property: transform;
+		transition:0.8s ease-out;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		padding-top: 20vh;
+		align-items: center;
+		background-color: var(--creda-purple);
+		width: 60vw;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 50;
+		box-shadow:2px 2px 4px #18191f;
+		opacity: 0.97;
+		overflow: hidden;
+	}
+	
 }
 
 .menu-open .nav-icon-hamburger {
