@@ -1,5 +1,5 @@
 :root {
-	--creda-yellow: #fdc627;
+	--creda-yellow: #fdb227f8;
 	--creda-purple: #2c0046;
 	--ellipse-green: #9bf5af;
 	--creda-gray: #18191f;
@@ -88,10 +88,14 @@ html.sr .section-content {
 
 .menu-open .nav-icon-hamburger {
 	display: none;
+
 }
 
 .menu-open .nav-icon-close {
 	display: block;
+	z-index:100;
+	position: fixed;
+	box-shadow: 2px 2px #fdb227f8;
 }
 
 .nav-links a:hover {
